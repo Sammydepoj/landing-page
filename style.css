@@ -1,8 +1,11 @@
 body{
     box-sizing: border-box;
+    /* max-width: 1200px; */
+    margin: 0rem auto;
 }
 .section1{
     background-image: url('images/bg-hero-desktop.svg');
+    background-color: hsl(193, 100%, 96%);
 }
 .logohead{
     display: flex;
@@ -10,13 +13,14 @@ body{
 }
 .logohead button{
     padding: 1rem 2.5rem;
-    background-color: white;
+    background-color: hsl(193, 100%, 96%);
     border-radius: 2rem;
     border: none;
     overflow: hidden;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem grey;
+    box-shadow: 0.1rem 0.2rem 0.2rem 0.06rem hsl(192, 100%, 9%);
 }
 .build-comm-and-image{
+    
     display: flex;
     justify-content: space-between;
     margin: 3rem;
@@ -63,8 +67,8 @@ box-sizing: border-box;
     justify-content: space-around;
     margin: 3rem;
     padding: 3rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem grey;
-    border-radius: 2rem;
+    box-shadow: 0.1rem 0.02rem 0.3rem 0.01rem hsl(192, 100%, 9%);
+    border-radius: 1rem;
     border: none;
     overflow: hidden;
 }
@@ -92,8 +96,8 @@ box-sizing: border-box;
     justify-content: space-around;
     margin: 3rem;
     padding: 3rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem grey;
-    border-radius: 2rem;
+    box-shadow: 0.1rem 0.02rem 0.3rem 0.01rem hsl(192, 100%, 9%);
+    border-radius: 1rem;
     border: none;
     overflow: hidden;
 }
@@ -119,8 +123,8 @@ box-sizing: border-box;
     justify-content: space-around;
     margin: 3rem;
     padding: 3rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem grey;
-    border-radius: 2rem;
+    box-shadow: 0.1rem 0.02rem 0.3rem 0.01rem hsl(192, 100%, 9%);
+    border-radius: 1rem;
     border: none;
     overflow: hidden;
 }
@@ -145,16 +149,14 @@ box-sizing: border-box;
 .readytobuild{
     color: hsl(192, 100%, 9%);
     text-align: center;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem grey;
+    box-shadow: 0.1rem 0.02rem 0.3rem 0.01rem hsl(192, 100%, 9%);
     width: 40%;
     padding: 3rem 1rem;
-    margin: 1rem auto;
+    margin: 0rem auto;
     border-radius: 0.5rem;
     position: relative;
-    bottom: -25px;
-    
-    /* border: none;
-    overflow: hidden; */
+    top: 3rem;
+    left: 2rem ;
 }
 .readytobuild button{
     padding: 1rem 2.5rem;
@@ -162,7 +164,6 @@ box-sizing: border-box;
     border: none;
     overflow: hidden;
     background-color: hsl(322, 100%, 66%); 
-    /* margin: 2rem 0rem;  */
     color: white;
 }
 footer{
@@ -170,9 +171,9 @@ footer{
     justify-content: space-evenly;
     background-color:hsl(192, 100%, 9%) ;
     color: white;
-    padding: 5rem;
-    box-sizing: border-box;
+    padding: 2rem;
     margin-top: -2rem;
+    box-sizing: border-box;
 }
 .huddle{
    display: flex;
@@ -181,6 +182,12 @@ footer{
    line-height: 2rem;
    padding: 2rem;
 }
+.huddle div img{
+    margin: 0 1rem 0rem 0rem;
+ }
+ .huddle img{
+    margin: 0 1rem 0rem 0rem;
+ }
 .aboutus{
     display: flex;
     flex-direction: column;
@@ -198,7 +205,7 @@ footer{
  .socials{
     display: flex;
     justify-content: space-between;
-    /* flex-direction: column; */
+    flex-direction: column;
     width: 25%; 
     line-height: 2rem;
     padding: 2rem;
@@ -206,4 +213,210 @@ footer{
  a{
      color: white;
      text-decoration: none;
+ }
+ 
+
+ @media(max-width:800px){
+    .section1{
+        background-image: url('images/bg-hero-mobile.svg');
+        background-color: hsl(193, 100%, 96%); 
+    }
+    .logohead{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .logo img{
+        width: 50%;
+    }
+    .logohead button{
+        padding: 0.4rem 0.4rem;
+        background-color: hsl(193, 100%, 96%);
+        border-radius: 2rem;
+        border: none;
+    }
+    .build-comm-and-image{
+        flex-direction: column;
+        max-width: 100%;
+        margin: 1rem 2rem ;
+    }
+    .build-comm h1{
+        margin-top: 0rem;
+        text-align: center;
+       }
+       .build-comm p{
+        margin: 1rem;
+        text-align: center; 
+    }
+    .build-comm button{
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+        background-color: hsl(322, 100%, 66%); 
+        margin: 2rem 0rem; 
+        color: white;
+    }
+    .build-comm{
+        width: 100%;
+        text-align: center;
+    }
+    .build-comm-image{
+        width: 100%;
+        height: 50%;
+        margin: 0rem auto;
+    }
+    .build-comm-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .grow-together-with-image{
+        padding: 0rem auto;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 3rem ;
+    }
+    .grow-together h2{
+        margin: 0rem;
+        padding: 0rem ;
+       }
+       .grow-together p{
+        margin: 1rem; 
+    }
+       .grow-together{
+        width: 100%;
+        margin: 0.5rem;
+    }
+    .grow-together-image{
+        width: 90%;
+        height: 50%;
+        margin: 0rem auto;
+    }
+    .grow-together-image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .flowing-conversation-with-image{
+        padding: 0rem auto;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 3rem ;
+    }
+    .flowing-conversation-image{
+        width: 90%;
+        height: 50%;
+        margin: 0rem auto;
+    }
+    .flowing-conversation-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .flowing-conversation{
+        width: 100%;
+        margin: 0.5rem;
+    }
+    .flowing-conversation h2{
+        margin: 0rem;
+        padding: 0rem;
+    }
+    .flowing-conversation p{
+        margin: 1rem;
+    }
+
+
+    .your-user-with-image{
+        padding: 0rem auto;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 3rem ;
+    }
+    .your-user-image{
+        width: 90%;
+        height: 50%;
+        margin: 0rem auto;
+    }
+    .your-user-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .your-user{
+        width: 100%;
+        margin: 0.5rem; 
+    }
+    .your-user h2{
+        margin: 0rem;
+        padding: 0rem;
+    }
+    .your-user p{
+        margin: 1rem;
+    }
+
+
+
+    .readytobuild{
+        width: 60%;
+        padding: 1rem 2rem;
+        margin: 1rem auto;
+        border-radius: 0.5rem;
+        position: relative;
+        left: auto;
+        
+    }
+    .readytobuild button{
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+        border: none;
+        overflow: hidden;
+        background-color: hsl(322, 100%, 66%); 
+        color: white;
+    }
+
+    footer{
+        flex-direction: column;
+        color: white;
+        padding: 2rem 1rem 1rem;
+        
+    }
+    .huddle{
+        display: flex;
+        width: 100%;
+        padding: 0rem ;
+        line-height: 2.5rem;
+        margin-top: 5rem;
+     }
+     .huddle div img{
+        margin: 0 1rem 0rem 0rem;
+     }
+     .huddle img{
+        margin: 0 1rem 1rem 0rem;
+        max-width: 350px;
+     }
+     .aboutus{
+         display: flex;
+         width: 100%;
+         flex-direction: column;
+         line-height: 2.5rem;
+         padding: 0rem ;
+      }
+      .career{
+         display: flex;
+         width: 100%;
+         flex-direction: column;
+         line-height: 2rem;
+         padding: 0rem;
+      }
+      .socials{
+         display: flex;
+         width: 100%;
+         justify-content: space-around;
+         line-height: 2rem;
+         padding: 0rem;
+      }
+      .socials+p{
+        text-align: center;
+      }
+    
+     
+
+
+
  }
