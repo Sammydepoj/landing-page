@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,700;1,700&display=swap');
+
 body{
     box-sizing: border-box;
     /* max-width: 1200px; */
@@ -18,7 +21,15 @@ body{
     border: none;
     overflow: hidden;
     box-shadow: 0.1rem 0.2rem 0.2rem 0.06rem hsl(192, 100%, 9%);
+    font-family: 'open sans';
+    font-weight: 400;
+    Font-size: 18px;
 }
+
+.logohead button:hover{
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.03rem hsl(192, 100%, 9%);  
+}
+
 .build-comm-and-image{
     
     display: flex;
@@ -32,10 +43,17 @@ body{
 }
 .build-comm p{
     text-align: left;
+    font-family: 'open sans';
+    font-weight: 400;
+    Font-size: 18px;
+    line-height: 2rem;
 }
 .build-comm h1{
  margin-top: 6rem;
  text-align: left;
+ font-family: 'Open sans';
+ font-weight: 700;
+ font-size: 2.5em;
 }
 .build-comm button{
     padding: 1rem 2.5rem;
@@ -45,6 +63,11 @@ body{
     background-color: hsl(322, 100%, 66%); 
     margin: 2rem 0rem; 
     color: white;
+    font-family: 'open sans';
+    font-weight: 700;
+}
+.build-comm button:hover{
+    background-color: hsl(322, 78%, 75%);    
 }
 
 .build-comm-image{
@@ -77,11 +100,16 @@ box-sizing: border-box;
 }
 .grow-together h2{
     margin: 6rem 2rem 2rem;
-    
+    font-family: 'poppins';
+    font-weight: 600;    
 }
 .grow-together p{
     margin: 2rem;
     text-align: left;
+    font-family: 'open sans';
+    font-weight: 400;
+    Font-size: 18px;
+    line-height: 2rem;
 }
 .grow-together-image{
     width: 50%;
@@ -113,10 +141,16 @@ box-sizing: border-box;
 }
 .flowing-conversation h2{
     margin: 6rem 2rem 2rem;
+    font-family: 'poppins';
+    font-weight: 600;
 }
 .flowing-conversation p{
     margin: 2rem;
     text-align: left;
+    font-family: 'open sans';
+    font-weight: 400;
+    Font-size: 18px;
+    line-height: 2rem;
 }
 .your-user-with-image{
     display: flex;
@@ -141,10 +175,16 @@ box-sizing: border-box;
 }
 .your-user h2{
     margin: 6rem 2rem 2rem;
+    font-family: 'poppins';
+    font-weight: 600;
 }
 .your-user p{
     margin: 2rem;
     text-align: left;
+    font-family: 'open sans';
+    font-weight: 400;
+    Font-size: 18px;
+    line-height: 2rem;
 }
 .readytobuild{
     color: hsl(192, 100%, 9%);
@@ -158,6 +198,10 @@ box-sizing: border-box;
     top: 3rem;
     left: 2rem ;
 }
+.readytobuild h2{
+    font-family: 'poppins';
+    font-weight: 600;
+}
 .readytobuild button{
     padding: 1rem 2.5rem;
     border-radius: 2rem;
@@ -165,6 +209,11 @@ box-sizing: border-box;
     overflow: hidden;
     background-color: hsl(322, 100%, 66%); 
     color: white;
+    font-family: 'poppins';
+    font-weight: 600;
+}
+.readytobuild button:hover{
+    background-color: hsl(322, 78%, 75%);    
 }
 footer{
     display: flex;
@@ -174,6 +223,8 @@ footer{
     padding: 2rem;
     margin-top: -2rem;
     box-sizing: border-box;
+    font-family: 'open sans';
+    font-weight: 400;
 }
 .huddle{
    display: flex;
@@ -210,9 +261,18 @@ footer{
     line-height: 2rem;
     padding: 2rem;
  }
+ .socials div a:hover {
+    color: hsl(322, 100%, 66%); 
+ }
+ .socials div a{
+    margin: 1rem;
+ }
  a{
      color: white;
      text-decoration: none;
+ }
+ a:hover{
+    text-decoration: underline;
  }
  
 
@@ -410,10 +470,14 @@ footer{
          justify-content: space-around;
          line-height: 2rem;
          padding: 0rem;
+         margin: 0rem auto;
+
       }
       .socials+p{
         text-align: center;
       }
+      .socials div a{
+        text-align: center;     }
     
      
 
