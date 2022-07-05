@@ -13,6 +13,7 @@ body{
 .logohead{
     display: flex;
     justify-content: space-between;
+    padding: 2rem;
 }
 .logohead button{
     padding: 1rem 2.5rem;
@@ -290,6 +291,7 @@ footer{
         width: 50%;
     }
     .logohead button{
+        margin: 0rem;
         padding: 0.4rem 0.4rem;
         background-color: hsl(193, 100%, 96%);
         border-radius: 2rem;
@@ -298,7 +300,7 @@ footer{
     .build-comm-and-image{
         flex-direction: column;
         max-width: 100%;
-        margin: 1rem 2rem ;
+        margin: 1rem 0.5rem ;
     }
     .build-comm h1{
         margin-top: 0rem;
@@ -309,7 +311,7 @@ footer{
         text-align: center; 
     }
     .build-comm button{
-        padding: 0.5rem 1.5rem;
+        padding: 0.8rem 1.5rem;
         border-radius: 2rem;
         background-color: hsl(322, 100%, 66%); 
         margin: 2rem 0rem; 
@@ -318,6 +320,8 @@ footer{
     .build-comm{
         width: 100%;
         text-align: center;
+        padding: 0rem;
+        margin: 0rem;
     }
     .build-comm-image{
         width: 100%;
