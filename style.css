@@ -32,7 +32,10 @@ body{
 }
 
 .build-comm-and-image{
-    
+    animation-name: myanime;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin: 3rem;
@@ -85,8 +88,24 @@ overflow: hidden;
 padding: 2rem 0rem 0rem 2rem;
 box-sizing: border-box;
 }
+@keyframes myanime {
+    from{
+        background-color: white;
+        margin: 3rem;
+        padding: 3rem;
+    }
+    to{ background-color: rgb(211, 211, 211);
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+        
+    }
 
 .grow-together-with-image{
+    animation-name: myanime;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    position: relative;
     display: flex;
     justify-content: space-around;
     margin: 3rem;
@@ -121,6 +140,10 @@ box-sizing: border-box;
 }
 
 .flowing-conversation-with-image{
+    animation-name: myanime;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    position: relative;
     display: flex;
     justify-content: space-around;
     margin: 3rem;
@@ -154,6 +177,10 @@ box-sizing: border-box;
     line-height: 2rem;
 }
 .your-user-with-image{
+    animation-name: myanime;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    position: relative;
     display: flex;
     justify-content: space-around;
     margin: 3rem;
@@ -481,10 +508,27 @@ footer{
         text-align: center;
       }
       .socials div a{
-        text-align: center;     }
-    
-     
-
-
-
+        text-align: center;     
+    }
+ }
+ @media(max-width:400px){
+    .logohead{
+        padding: 1rem;
+    }
+    .logohead button{
+        padding: 1rem;
+        margin: 0rem;
+    }
+    .grow-together-with-image{
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    .flowing-conversation-with-image{
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    .your-user-with-image{
+        margin: 1rem;
+        padding: 1.5rem;
+    }
  }
