@@ -90,13 +90,12 @@ box-sizing: border-box;
 }
 @keyframes myanime {
     from{
-        background-color: white;
-        margin: 3rem;
-        padding: 3rem;
-    }
-    to{ background-color: rgb(211, 211, 211);
         margin: 1rem;
         padding: 1.5rem;
+    }
+    to{ 
+        margin: 3rem;
+        padding: 3rem;
     }
         
     }
